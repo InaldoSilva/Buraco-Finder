@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+/*menu hamburguer*/
+#menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #DC052D;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 2rem;
+    right: 2rem;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    /*margin: 30px 0 20px 20px;*/
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(50%,-35%);
+    }
+/*fim menu hamburguer*/
+
+.cabecalho {
+    width: 100vw;
+    height: 50px;
+}
+
+.name {
+    width: 30rem;
+    position: absolute;
+    top: 1rem;
+    left: 28rem;
+}
+
+.conteudo_principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    margin-top: 5rem;
+    background-image: url(./assets/reclamação-rua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 2rem auto;
+    gap: 10px;
+    /* Efeito Glass */
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+form input {
+    width: 380px;
+    height: 30px;
+    border: solid .5px grey;
+    border-radius: 5px;
+    background-color: rgba(136, 117, 89, 0.308);
+    text-indent: calc(2%);
+}
+
+textarea {
+    background-color: rgba(136, 117, 89, 0.308);
+    text-indent: 2%;
+}
+
+#btn {
+    width: 60px;
+    border-radius: 5px;
+    background-color: rgb(125, 165, 226);
+    &:hover {
+        cursor: pointer;
+        background-color: aliceblue;
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+
+.rodape {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 96px;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.esquerda a > #ig {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    opacity: 40%;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.esquerda a > #gh {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    opacity: 40%;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.esquerda a > #x {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    opacity: 40%;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.esquerda a > #fb {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    opacity: 40%;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+
+    .name {
+        position: relative;
+        width: 18rem;
+        top: 1.7rem;
+        left: 1rem;
+    }
+
+    form {
+        width: 340px;
+    }
+
+    form input, textarea {
+        width: 320px;
+    }
+    
+}

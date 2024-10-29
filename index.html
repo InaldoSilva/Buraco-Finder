@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/alerta buraco.png">
+    <title>Alerta de Buracos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pageName">
+        <img src="./assets/name.png" alt="nome" class="name">
+    </div>
+    <!--Menu hamburguer-->
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Colabore</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+    <!---->
+    <div class="glass">
+        <div class="conteudo_principal">
+            <form action="">
+                <label for="email">E-mail</label>
+                <input type="email" id="E-mail">
+                <label for="data">Data</label>
+                <input type="datetime-local" id="data">
+                <label for="text">Endereço</label>
+                <input type="text" id="endereco">
+                <label for="text">Descrição</label>
+                <textarea name="" id="" cols="58" rows="10" id="texto"></textarea>
+                <button id="btn">Enviar</button>
+                <input type="file" required id="upload-file" accept="image/">
+            </form>
+        </div>
+        
+    </div>
+</body>
+<footer class="rodape">
+    <div class="esquerda">
+        <a href="https://instagram.com" target="_blank"><img id="ig" src="./assets/instagram.jpg" alt=""></a>*
+        <a href="https://github.com" target="_blank"><img id="gh" src="./assets/github.png" alt=""></a>
+        <a href="https://x.com" target="_blank"><img id="x" src="./assets/x.jpg" alt=""></a>*
+        <a href="https://facebook.com" target="_blank"><img id="fb" src="./assets/facebook.png" alt=""></a>*
+    </div>
+    <div class="direita">
+
+    </div>
+</footer>
+<script src="script.js"></script>
+</html>
