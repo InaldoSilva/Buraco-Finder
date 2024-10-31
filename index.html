@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/alerta buraco.png">
     <title>Alerta de Buracos</title>
     <link rel="stylesheet" href="style.css">
+    </script>
 </head>
 <body>
     <div class="pageName">
@@ -29,24 +30,25 @@
       </div>
       
       <div class="menu-bg" id="menu-bg"></div>
-    <!---->
+    <!--Efeito glass e formulário-->
     <div class="glass">
         <div class="conteudo_principal">
             <form action="">
                 <label for="email">E-mail</label>
-                <input type="email" id="E-mail">
+                <input type="email" id="email">
                 <label for="data">Data</label>
                 <input type="datetime-local" id="data">
                 <label for="text">Endereço</label>
                 <input type="text" id="endereco">
                 <label for="text">Descrição</label>
-                <textarea name="" id="" cols="58" rows="10" id="texto"></textarea>
+                <textarea name="descricao" cols="58" rows="10" id="texto"></textarea>
                 <button id="btn">Enviar</button>
                 <input type="file" required id="upload-file" accept="image/">
             </form>
         </div>  
     </div>
 </body>
+<!--Rodapé-->
 <footer class="rodape">
     <div class="esquerda">
         <a href="https://instagram.com" target="_blank"><img id="ig" src="./assets/instagram.jpg" alt=""></a>*
@@ -58,5 +60,7 @@
         <p>Desenvolvido por <a href="https://github.com/jhoyzin" target="_blank">Luiz Lopes Jr</a> e <a href="https://github.com/eduardoAlmeid4" target="_blank">Eduardo Pedrosa</a>  &copy; 2024 UniFG</p>
     </div>
 </footer>
+<!--scripts-->
 <script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>
