@@ -6,8 +6,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/alerta buraco.png">
     <title>Alerta de Buracos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./slider.css">
     </script>
 </head>
 <body>
@@ -24,28 +24,26 @@
         <nav class="nav" id="nav">
           <ul>
             <li><a href="./index.html">Início</a></li>
-            <li><a href="./envio.html">Envio</a></li>
+            <li><a href="./form.html">Envio</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Colabore</a></li>
           </ul>
         </nav> 
       </div>
-    <!--Fim menu hamburguer-->  
+      
       <div class="menu-bg" id="menu-bg"></div>
-   
-      <div class="glass">
+    <!--Efeito glass e formulário-->
+    <div class="glass">
         <div class="conteudo_principal">
-            <form>
-                <img src="./assets/sobre.png" alt="sobre" style="width: 300px; position: relative; top: -10rem;">
-                <p style="text-align: center; font-weight: 600;">Nosso site foi criado com o
-                    propósito de conectar
-                    cidadãos e autoridades
-                    locais.
-                    Você poderá relatar buracos e outras questões
-                    relacionadas à infraestrutura da nossa cidade,
-                    ajudando a promover melhorias que beneficiarão a
-                    todos. Juntos, podemos trabalhar para um trânsito
-                    mais seguro e eficiente!</p>
+            <form action="https://formsubmit.co/inaldogtsilva@gmail.com" method="POST">
+                <img src="./assets/denuncie.png" alt="denuncie" style="width: 300px; margin-bottom: 2rem;">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="date" name="data" placeholder="Data" required>   
+                <input type="text" placeholder="Endereco" required> 
+                <textarea name="descricao" id="descricao" placeholder="Descreva" cols="59" rows="10"></textarea>           
+                <input type="file" required id="upload-file" accept="image/">
+                <button id="btn" type="submit">Enviar</button>
+                <input type="hidden" name="_captcha" value="false">   
             </form>
         </div>  
     </div>
