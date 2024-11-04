@@ -220,6 +220,9 @@ textarea {
 }
 
 @media screen and (min-width:320px) and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
 
     .pageName {
         position: absolute;
@@ -240,10 +243,18 @@ textarea {
         width: 320px;
     }
 
+    .mySlides {
+        width: 300px !important;
+    }
+
+    .btn-nav {
+        gap: 10px;
+    }
+
     .rodape {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 200px;
     }
 
     .direita a{
