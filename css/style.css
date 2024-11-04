@@ -89,7 +89,7 @@ textarea {
 .btn-nav {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 }
 
 #back {
@@ -122,6 +122,23 @@ textarea {
     &:hover {
         cursor: pointer;
         background-color: rgb(185, 207, 226);
+        box-shadow: inset 2px 2px 2px;
+    }
+}
+
+#inicio {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(226, 222, 185);
+    background-image: url(/assets/inicio.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(101, 139, 82);
         box-shadow: inset 2px 2px 2px;
     }
 }
