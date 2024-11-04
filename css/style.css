@@ -15,7 +15,7 @@ html {
     width: 100%;
     height: 600px;
     margin-top: 5rem;
-    background-image: url(./assets/reclamação-rua.jpg);
+    background-image: url(/assets/reclamação-rua.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -145,11 +145,15 @@ textarea {
 
 @media screen and (min-width:320px) and (max-width:768px){
 
-    .name {
-        position: relative;
-        width: 17rem;
-        top: 1.7rem;
-        left: 1rem;
+    .pageName {
+        position: absolute;
+        width: 100%;
+        top: 1rem;
+        left: -26rem;
+    }
+
+    .pageName img {
+        width: 16rem;
     }
 
     form {
